@@ -1,0 +1,197 @@
+/* pages/home/home.wxss */
+/*轮播*/
+.head{
+  width:100%;
+  height:200rpx;
+  background:#e1372a;
+  position:absolute;
+}
+swiper{
+  width:90%;
+  height:300rpx;
+  margin:0 auto;
+}
+swiper swiper-item{
+  width:100%;
+  margin:0 auto;
+  border-radius:25rpx;
+}
+swiper swiper-item image{
+  width:100%;
+  height:300rpx;
+}
+/*导航*/
+.nav{
+  width: 100%;
+  height:200rpx;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+  margin-bottom:30rpx;
+}
+.nav-item {
+  width:25%;
+  height:180rpx;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .nav-item image{
+  width:100rpx;
+  height:100rpx;
+  margin-top:20rpx;
+}
+.nav .nav-item text{
+  font-size:16px;
+}
+/*精品单品*/
+.jpdp_title{
+  width: 100%;
+  height:80rpx;
+}
+.jpdp_title text{
+  width: 100%;
+  color: #424242;
+  font-weight: 900;
+  font-size:22px;
+  margin-left:20rpx;
+}
+.jpdp_title .jpdp_bg{
+  width: 120rpx;
+  height:130rpx;
+  background: url(http://127.0.0.1:3000/img/bg.png) no-repeat 0% 50%;
+  background-size: 520rpx auto;
+  margin:-80rpx 220rpx;
+}
+/*单品*/
+.dp{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+.dp .dp-left{
+  width:40%
+}
+.dp .dp-left image{
+  width:290rpx;
+  height:366rpx;
+}
+.dp .dp-right{
+  width:53%;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: space-around;
+}
+.dp .dp-right image{
+  width:396rpx;
+  height:178rpx;
+}
+/*专题推荐*/
+.zttj_title{
+  width: 100%;
+  height:80rpx;
+  margin-top:50rpx;
+}
+.zttj_title text{
+  width: 100%;
+  color: #424242;
+  font-weight: 900;
+  font-size:22px;
+  margin-left:20rpx;
+}
+.zttj_title .zttj_bg{
+  width: 120rpx;
+  height:130rpx;
+  background: url(http://127.0.0.1:3000/img/bg.png) no-repeat 61% 50%;
+  background-size: 520rpx auto;
+  margin:-105rpx 190rpx;
+}
+/*专题*/
+.zt{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  padding:10rpx;
+}
+.zt>image{
+  width:202rpx;
+  height:310rpx;
+}
+.zt .zt-left,.zt-right{
+  width:232rpx;
+  height:330rpx;
+  display:flex;
+  flex-direction: column;
+}
+.zt .zt-left image{
+  width:220rpx;
+  height:220rpx
+}
+.zt .zt-right image{
+  width:220rpx;
+  height:220rpx
+}
+.sname{
+  font-size:14px;
+}
+.price{
+  color:red;
+}
+.select{
+  width:100%;
+  text-align: center;
+}
+.select image{
+  width:95%;
+  height:176rpx;
+}
+/*更多推荐-标题*/
+.gdtj_title{
+  width: 100%;
+  height:80rpx;
+  margin-top:20rpx;
+}
+.gdtj_title text{
+  width: 100%;
+  color: #424242;
+  font-weight: 900;
+  font-size:22px;
+  margin-left:20rpx;
+}
+.gdtj_title .gdtj_bg{
+  width: 120rpx;
+  height:130rpx;
+  background: url(http://127.0.0.1:3000/img/bg.png) no-repeat 30% 50%;
+  background-size: 520rpx auto;
+  margin:-90rpx 220rpx;
+}
+/*更多推荐*/
+.more{
+  width:100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  margin-top:10rpx; 
+}
+.more .more-item{
+  width:330rpx;
+  flex-flow:column wrap;
+  justify-content: space-between;
+}
+.more .more-item image{
+  width:330rpx;
+  height: 316rpx;
+}
+.more .more-item .more-name{
+  color:#424242;
+  font-size:16px;
+}
+.more .more-item .more-price{
+  color:#e1372a;
+}
+
+
+
+
+

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/shopcar/shopcar",
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/person/person",
+    "pages/product/product",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e1372a",
+    "navigationBarTitleText": "王者荣耀周边商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "static/home.png",
+      "selectedIconPath": "static/home-active.png"
+    },{
+      "pagePath": "pages/product/product",
+      "text": "分类",
+      "iconPath": "static/fenlei-active.png",
+      "selectedIconPath": "static/fenlei.png"
+    },
+    {
+      "pagePath": "pages/shopcar/shopcar",
+      "text": "购物车",
+      "iconPath": "static/shopcart.png",
+      "selectedIconPath": "static/shopcar-active.png"
+    },
+    {
+      "pagePath": "pages/person/person",
+      "text": "我的",
+      "iconPath": "static/user.png",
+      "selectedIconPath": "static/user-active.png"
+    }]
+  }
+}

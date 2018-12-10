@@ -1,0 +1,53 @@
+<!--pages/person/person.wxml-->
+<view class="info">
+  <image src="{{avatarUrl}}" lazy-load></image>
+  <text class="arrow">{{nickname}}</text>
+</view>
+<view class="line"></view>
+<!--订单-->
+<view class="dd arrow">
+  <text>我的订单</text>
+  <text>查看全部订单</text>
+</view>
+<view class="bor"></view>
+<!--待付款-->
+<view class="wait-bg">
+  <view>
+    <text></text>
+  </view>  
+  <view>
+    <text></text>
+  </view> 
+  <view>
+    <text></text>
+  </view> 
+  <view>
+    <text></text>
+  </view> 
+</view>
+<view class="wait-text">
+  <text>待付款</text>
+  <text>待发货</text>
+  <text>待收货</text>
+  <text>待评价</text>
+</view>
+<view class="line"></view>
+<!--我的-->
+<view class="mine">
+  <text class="shopcar arrow" bindtap='handleJumpCar'>我的购物车</text >
+  <view class="bor"></view>
+  <text  class="preferential arrow">我的优惠券</text >
+  <view class="bor"></view>
+  <text  class="collection arrow">我的收藏</text >
+  <view class="bor"></view>
+  <text  class="evaluation arrow">我的评价</text >
+</view>
+<view class="addr arrow ">
+  <text>收货地址</text>
+</view>
+<!--关于-->
+<view class="about">  
+    <text>系统消息</text>  
+    <text>帮助中心</text>
+    <text>关于我们</text>
+</view>

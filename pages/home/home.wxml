@@ -1,0 +1,81 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<view class="head"></view>
+<swiper autoplay circular indicator-dots indicator-color="white" indicator-active-color="yellow" interval="3000">
+  <swiper-item wx:for="{{bannerList}}" wx:key="item.id">
+      <image src="{{item.img_url}}" bindtap='handleJump1' lazy-load></image>
+  </swiper-item>
+</swiper>
+<view class='line'></view>
+<!--导航-->
+<view class="nav">
+  <view class="nav-item" wx:for="{{navList}}" wx:key="{{item.id}}"  >
+    <image src="{{item.img_url}}" bindtap='handleJump1' lazy-load mode='aspectFill'></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<!--精品单品-标题-->
+<view class="jpdp_title">
+  <text>精品单品</text>
+  <view class="jpdp_bg"></view>
+</view>  
+<view class="gray"></view>
+<!--精品单品-->
+<view class="dp">
+  <view class="dp-left" >
+    <image src="http://127.0.0.1:3000/img/index1.png" bindtap='handleJump1'></image>
+  </view>
+  <view class="dp-right">
+    <image src="http://127.0.0.1:3000/img/index2.png" bindtap='handleJump1'></image>
+    <image src="http://127.0.0.1:3000/img/index3.png" bindtap='handleJump1'></image>
+  </view>
+</view>
+<view class='line'></view>
+<!--专题推荐-标题-->
+<view class="zttj_title">
+  <text>专题推荐</text>
+  <view class="zttj_bg"></view>
+</view> 
+<view class="gray"></view>
+<!--专题推荐-->
+<view class="zt" wx:for="{{titleList}}" wx:key="{{item.id}}">
+    <image src="{{item.lg_img}}" bindtap='handleJump1'></image>
+    <view class="zt-left">
+      <image src="{{item.sm_img}}"  bindtap='handleJump1'></image>
+      <text class="sname">{{item.lg_name}}</text>
+      <text class="price">￥{{item.lg_price}}</text>
+    </view>
+    <view class="zt-right">
+      <image src="{{item.md_img}}"  bindtap='handleJump1'></image>
+      <text class="sname">{{item.md_name}}</text>
+      <text class="price">￥{{item.md_price}}</text>
+    </view>
+</view>
+<view class='line'></view>
+<!--点击查看-->
+<view class="select">
+  <image src="http://127.0.0.1:3000/img/middle-title.png"></image>
+</view>
+<view class="gray"></view>
+<!--更多推荐-标题-->
+<view class="gdtj_title">
+  <text>更多推荐</text>
+  <view class="gdtj_bg"></view>
+</view> 
+<view class="gray"></view>
+<!--更多推荐-->
+<view class="more">
+  <view class="more-item" wx:for="{{moreList}}" wx:key="{{item.id}}">
+    <image src="{{item.img_url}}"  bindtap='handleJump1'></image>
+    <text class="more-name">{{item.name}}</text>
+    <text class="more-price">￥{{item.price}}</text>
+  </view> 
+</view>
+
+
+
+
+
+
+
+

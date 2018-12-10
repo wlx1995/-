@@ -1,0 +1,123 @@
+/* pages/person/person.wxss */
+view.info{
+  width:100%;
+  display:flex;
+  margin-bottom:5rpx;
+  padding:15rpx;
+}
+view.info image{
+  width:120rpx;
+  height:100rpx;
+}
+view.info text{
+  margin-left:20rpx;
+  width:100%;
+}
+/*订单*/
+.dd{
+  display: flex;
+  justify-content:space-between;
+  padding:10rpx;
+  border-top:20rpx solid #f5f5f5;
+}
+.dd text{
+  font-size:16px;
+}
+.dd text:last-child{
+  margin-left:320rpx;
+  color:#9e9e9e;
+}
+/*待付款*/
+.wait-bg{
+  display: flex;
+  padding-top:30rpx;
+  padding-left:30rpx;
+  justify-content: space-around;
+}
+.wait-bg view{
+  width:18%;
+  height:100rpx;
+}
+.wait-bg view:first-child text{
+  display:inline-block;
+  width:100rpx;
+  height:80rpx;
+  background: url(http://127.0.0.1:3000/img/bg2.png) no-repeat;
+  background-position: 17.302798982188293% 72.49357326478149%;
+  background-size: 625rpx auto;
+}
+.wait-bg view:nth-child(2) text{
+  display:inline-block;
+  width:100rpx;
+  height:80rpx;
+  background: url(http://127.0.0.1:3000/img/bg2.png) no-repeat;
+  background-position: 51.908396946564885% 72.49357326478149%;
+  background-size: 625rpx auto;
+}
+.wait-bg view:nth-child(3) text{
+  display:inline-block;
+  width:100rpx;
+  height:80rpx;
+  background: url(http://127.0.0.1:3000/img/bg2.png) no-repeat;
+  background-position: 0 72.49357326478149%;
+  background-size: 630rpx auto;
+}
+.wait-bg view:last-child text{
+  display:inline-block;
+  width:100rpx;
+  height:80rpx;
+  background: url(http://127.0.0.1:3000/img/bg2.png) no-repeat;
+  background-position: 34.605597964376585% 72.49357326478149%;
+  background-size: 625rpx auto;
+}
+.wait-text{
+  width:100%;
+  display: flex;
+  font-size:14px;
+  margin-bottom:30rpx;
+}
+.wait-text text{
+  width:20%;
+}
+.wait-text text:first-child{
+  margin-left:60rpx;
+}
+.wait-text text:nth-child(2){
+  margin-left:40rpx;
+}
+.wait-text text:nth-child(3){
+  margin-left:10rpx;
+}
+.wait-text text:last-child{
+  margin-left:40rpx;
+}
+/*我的*/
+.mine{
+  border-top:20rpx solid #f5f5f5;
+  border-bottom:20rpx solid #f5f5f5;
+  display: flex;
+  flex-flow: column nowrap;
+  font-size:16px;
+}
+.mine text{
+  padding:15rpx;
+}
+.bor{
+  width:100%;
+  height:2rpx;
+  border-bottom:10rpx solid #f5f5f5;
+}
+.addr{
+  border-bottom:20rpx solid #f5f5f5;
+}
+.addr text{
+  padding:15rpx;
+  font-size:16px;
+}
+/*关于*/
+.about{
+  font-size:16px;
+  display:flex;
+  justify-content: space-around;
+  margin-top:100rpx;
+}

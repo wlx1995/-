@@ -1,0 +1,112 @@
+/* pages/detail/detail.wxss */
+.nav{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  padding:15rpx;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 10;
+}
+.nav text{
+  font-size:16px;
+}
+.nav image{
+  width:40rpx;
+  height:36rpx;
+}
+/*轮播图*/
+swiper{
+  width:100%;
+  height:720rpx;
+  margin-top:40rpx;
+}
+swiper swiper-item{
+  text-align: center;
+}
+swiper swiper-item image{
+  width:750rpx;
+  height:720rpx;
+}
+/*详情*/
+.detail{
+  margin:30rpx 10rpx;
+  font-size:16px;
+  margin-left:30rpx;
+}
+.detail .name{
+   color:#030303;
+
+}
+.detail .price{
+  color:#f22c3e;
+}
+/*选择*/
+.choice{
+  font-size:16px;
+  line-height: 56rpx;
+  margin-left:30rpx
+}
+/*包邮*/
+.baoyou{
+  padding:5rpx;
+  font-size:16px;
+  line-height:66rpx;
+  color:#aaa;
+}
+.baoyou text:first-child{
+  background:#f22c3e;
+  color:#fff;
+  font-size:14px;
+  border-radius: 10rpx;
+  margin-left:30rpx;
+  margin-right:30rpx;
+}
+/*承诺*/
+.promise{
+  width:100%;
+  padding:5rpx;
+  font-size:14px;
+  line-height:66rpx;
+  color:#aaa;
+  padding-left:80rpx;
+  background:url(http://127.0.0.1:3000/img/icon_sp.png)no-repeat;
+  background-size:90rpx auto;
+  background-position:35rpx 20rpx;
+}
+/*购买*/
+.shopping{
+  width:100%;
+  height:80rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position:fixed;
+  bottom:0;
+  left:0;
+}
+.shopping text{
+  width:20%;
+  font-size:12px;
+  text-align: center;
+}
+.shopping text:first-child{
+  margin-left:25rpx;
+  background: url(http://127.0.0.1:3000/img/icon_sp.png) norepeat;
+  background-size:90rpx auto;
+  background-position:35rpx 20rpx;
+}
+.shopping text:nth-child(4){
+  width:22%;
+  color:#fff;
+  background:#e0973d;
+  padding:33rpx;
+  margin-left:30rpx;
+}
+.shopping text:nth-child(5){
+  width:22%;
+  color:#fff;
+  background:#e62d40;
+  padding:33rpx;
+}

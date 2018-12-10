@@ -1,0 +1,31 @@
+<!--pages/shopcar/shopcar.wxml-->
+<view class="nav">
+  <image src="../../static/home.png" lazy-load bindtap='handleJumpHome'></image>
+  <text>购物车</text>
+</view>
+<view class="line"></view>
+<!--购物车-->
+<view class="shopcar">
+  <image src="../../static/shopcart.png" lazy-load></image>
+  <text>购物车空空如也~</text>
+  <text bindtap='handleJump'>去逛逛</text>
+</view>
+<!--推荐-->
+<view class="tj">
+  <text class="title">为你推荐</text>
+</view>
+<!--推荐列表-->
+<view class="shop">
+  <view class="shop-item" wx:for="{{shopList}}" wx:key="{{item.id}}"> 
+      <image src="{{item.img_url}}" bindtap='handleJump'></image>
+      <text class="name ell">{{item.name}}</text>
+      <text class="price">￥{{item.price}}</text>
+  </view> 
+</view>
+<!--结算-->
+<view class="js">
+  <radio>全选</radio>
+  <text>共计0件</text>
+  <text>合计0.00元</text>
+  <text>结算</text>
+</view>

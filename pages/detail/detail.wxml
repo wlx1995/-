@@ -1,0 +1,53 @@
+<!--pages/detail/detail.wxml-->
+<view class='nav'>
+  <text>商品</text>
+  <text>详情</text>
+  <text>评价</text>
+  <image src="../../static/shopcart.png"></image>
+</view>
+
+<!--详情图轮播-->
+ <swiper autoplay circular  interval="3000">
+  <swiper-item >
+    <image src="http://127.0.0.1:3000/img/detail1.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+    <image src="http://127.0.0.1:3000/img/detail2.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+    <image src="http://127.0.0.1:3000/img/detail3.jpg"></image>
+  </swiper-item>
+    <swiper-item>
+    <image src="http://127.0.0.1:3000/img/detail4.jpg"></image>
+  </swiper-item>
+ </swiper>
+<!--商品信息-->
+<view class="detail">
+  <view class="name">吕布智能机器人(豪华版)</view>
+  <view class="price">￥1988.00</view>
+</view>
+<view class="line"></view>
+<!--选择-->
+<view>
+  <text class="choice arrow ell">请选择</text>
+</view>
+<view class="line"></view>
+<!--包邮-->
+<view  class="baoyou">
+  <text>包邮</text>
+  <text>正式开业限时包邮</text>
+</view>
+<view class="line"></view>
+<!--承诺-->
+<view class="promise">
+  <text>7天无忧退换货,100%官方正品</text>
+</view>
+<view class="line"></view>
+<!--购买-->
+<view class="shopping">
+  <text bindtap='handleJumpHome'>首页</text>
+  <text>客服</text>
+  <text bindtap='handleTap1'>{{text}}</text>
+  <text>加入购物车</text> 
+  <text>立即购买</text>  
+</view>
